@@ -1,4 +1,4 @@
-from llm import extract_info_from_100_posts
+from llm_prompt import extract_info_from_100_posts
 from extract_from_orginal import parsed_data
 
 parsed_data = parsed_data

@@ -20,6 +20,21 @@ class MentionedAuthor(SQLModel, table=True):
     post: Optional["Post"] = Relationship(back_populates="mentioned_authors")
 
 
+class Brand(SQLModel, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
+    doc_id: int = Field(foreign_key="post.docId")
+    brand_name: str
+
+    post: Optional["Post"] = Relationship(back_populates="brands")
+
+
+class Product(SQLModel, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
+    doc_id: int = Field(foreign_key="post.docId")
+    product_name: str
+
+    post: Optional["Post"] = Relationship(back_populates="products")
+
 class Post(SQLModel, table=True):
     docId: int = Field(primary_key=True)
     authorFollower: int
@@ -30,8 +45,8 @@ class Post(SQLModel, table=True):
     shares: int
     text: str
     mentioned_authors: List[MentionedAuthor] = Relationship(back_populates="post")
-    brand_name: Optional[str] = None  # Make brand_name nullable
-    product_name: Optional[str] = None  # Make product_name nullable
+    brands: List[Brand] = Relationship(back_populates="post")
+    products: List[Product] = Relationship(back_populates="post")
 
 
 # Create the SQLite database and tables

@@ -14,5 +14,5 @@ json_objects = ['{' + obj + '}'  for obj in json_objects]
 parsed_data = [json.loads(obj) for obj in json_objects]
 
 
-
+print(parsed_data[0])
 
