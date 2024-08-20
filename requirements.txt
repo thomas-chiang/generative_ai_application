@@ -1,0 +1,2 @@
+sqlmodel
+google-cloud-aiplatform
