@@ -25,24 +25,24 @@ def extract_info_from_100_posts(posts):
     return response.text
 
 
-brand_set = {"Nikes", "Adidias"}
-product_set = {"jacket", "shoes"}
+# brand_set = {"Nikes", "Adidias"}
+# product_set = {"jacket", "shoes"}
 
 
-data = {
-    "docId": 1,
-    "authorFollower": 12200,
-    "author": "JibreelDia",
-    "postType": "retweet",
-    "publicationTime": {
-        "timestamp": 1719727087000,
-        "gmt_date": "2024-06-30 05:58:07.000",
-    },
-    "mentionedAuthors": [],
-    "comments": 2506,
-    "shares": 5967,
-    "text": "New shoes and jacket I bought yesterday! Y'all know I love my Nikes and Adidias 😁 https://t.co/FvQG4CKoBD",
-}
+# data = {
+#     "docId": 1,
+#     "authorFollower": 12200,
+#     "author": "JibreelDia",
+#     "postType": "retweet",
+#     "publicationTime": {
+#         "timestamp": 1719727087000,
+#         "gmt_date": "2024-06-30 05:58:07.000",
+#     },
+#     "mentionedAuthors": [],
+#     "comments": 2506,
+#     "shares": 5967,
+#     "text": "New shoes and jacket I bought yesterday! Y'all know I love my Nikes and Adidias 😁 https://t.co/FvQG4CKoBD",
+# }
 
-I want to extract text field from data checkect if each word in text is in brand_set or product_set, 
-if in, update the data with new key 'brands': [brand...] and  new key 'product': [product...]
+# I want to extract text field from data checkect if each word in text is in brand_set or product_set, 
+# if in, update the data with new key 'brands': [brand...] and  new key 'product': [product...]

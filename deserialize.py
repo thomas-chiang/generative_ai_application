@@ -27,7 +27,4 @@ for obj in json_objects:
         errors.append(e)
 
 print("Number of Errors: ", len(errors))
-print(errors)
-print(brand_set)
-print(product_set)
 
