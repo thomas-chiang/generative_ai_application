@@ -27,6 +27,8 @@ The following deliverables are included in this repository:
 - **Python Code for Data Extraction:** Located in the `data_extraction/` directory, this code is responsible for parsing the JSON data, extracting relevant attributes using LLMs, and inserting them into the database.
   
 - **Database Schema:** The database schema design can be found in the `persistence/` directory.
+  <img width="953" alt="image" src="https://github.com/user-attachments/assets/00eaf6b7-96ee-454a-8184-994be1db6db8">
+
 
 - **Python Code for Data Aggregation and Insight Generation:** Located in the `data_aggregation/` directory, this code performs SQL-based data aggregation to generate insights, which are then exported to CSV files.
 
